@@ -1,7 +1,11 @@
 help:
+	@echo make init
 	@echo make run
 	@echo make docker-run
 	@echo make run-ui
+
+init:
+	uv sync
 
 run: clean
 	python main.py
